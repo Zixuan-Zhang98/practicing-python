@@ -18,7 +18,7 @@ def index():
     if form.validate_on_submit():
         breed = form.breed.data
         form.breed.data = ''
-    return render_template('home.html', form=form, breed=breed)
+    return render_template('index.html', form=form, breed=breed)
 
 if __name__ == '__main__':
-    app.run()
+    app.run(debug=True)
