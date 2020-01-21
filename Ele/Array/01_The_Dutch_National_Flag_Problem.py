@@ -30,8 +30,10 @@ def dutch_flag_partition2(pivot_index, A):
             A[equal], A[larger] = A[larger], A[equal]
             larger = larger - 1
 
-list = [0,1,1,0,2,1,0]
+
+
+list = [0,1,1,0,2,0,0]
 print(list)
-dutch_flag_partition1(1, list)
+dutch_flag_partition2(1, list)
 print(list)
 
